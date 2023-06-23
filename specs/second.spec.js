@@ -1,39 +1,24 @@
+const { element, by } = require("protractor");
+
 const expect = require("chai").expect;
 const EC = protractor.ExpectedConditions;
 browser.waitForAngularEnabled(false);
 
 describe("Second test in my life", function () {
   it("second test", async function () {
-    const ButtonStartGameSelector = "gameCreateButton";
-    const ButtonStart = $(ButtonStartGameSelector);
-    const ButtonSecondStartSelector = "#playerFormSubmitButton";
-    const ButtonSecondStart = $(ButtonSecondStartSelector);
-    const ButtonGameSettingsSelector = "#gameSettingsSubmitButton";
-    const ButtonGameSettings = $(ButtonGameSettingsSelector);
-
     await browser.get("https://test3-metafora-game.web.app");
 
-    await browser.wait(
-      EC.visibilityOf(ButtonStart),
-      15*1000,
-      "Sorry no button ButtonStart"
-    );
-    await browser.wait(
-      EC.visibilityOf(ButtonSecondStart),
-      7000,
-      "Sorry no button ButtonSecondStart"
-    );
-    await browser.wait(
-      EC.visibilityOf(ButtonGameSettings),
-      7000,
-      "Sorry no button ButtonGameSettings"
-    );
+    const button1 = $("#gameCreateButton");
+    await browser.wait(EC.visibilityOf(button1), 10000, "Sorry, no button1");
+    await button1.click();
 
-    await ButtonStart.click();
+    const button2 = $("#playerFormSubmitButton");
+    await browser.wait(EC.visibilityOf(button2), 10000, "Sorry, no button2");
+    await button2.click();
 
-    await ButtonSecondStart.click();
-
-    await ButtonGameSettings.click();
+    const button3 = $("#gameSettingsSubmitButton");
+    await browser.wait(EC.visibilityOf(button3), 10000, "Sorry, no button3");
+    await button3.click();
 
     await browser.sleep(10050);
   });
