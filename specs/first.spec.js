@@ -23,7 +23,7 @@ describe ("First suit", function (){
    await SearchInput.sendKeys(SearchValue)
    await SearchButton.click()
 
-   await browser.wait(EC.visibilityOf(CatalogPhone), 10000, "You are here my boy")
+   await browser.wait(EC.visibilityOf(CatalogPhone), 5000, "You are here my boy")
    const CatalogPhoneValue = await CatalogPhone.getText()
 
    expect(CatalogPhoneValue.toLowerCase()).to.include("samsung")
