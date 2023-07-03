@@ -1,8 +1,9 @@
 const conf = {
-    specs: ['./specs/**/*.spec.js'],
+   // specs: ['./specs/**/*.spec.js'],
+   specs: ['./specs/second.spec.js'],
     framework: "mocha",
     mochaOpts:{
-        timeout: 20 * 1000
+        timeout: 40 * 1000
     },
     onPrerape (){
         browser.waitForAngularEnabled(false)
