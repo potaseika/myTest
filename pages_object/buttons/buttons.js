@@ -1,8 +1,11 @@
 class ButtonSelector {
     constructor(button){
-        this.button = button
-        this.button.root = $('string')
+        this.button = button.name
+        this.button.root = $("String")
     }
+    click()
 }
 
-export default ButtonSelector
+module.exports = {
+    ButtonSelector
+}

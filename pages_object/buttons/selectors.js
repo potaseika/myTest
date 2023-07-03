@@ -1,4 +1,4 @@
-import ButtonSelector from './buttons.js'
+const { Button } = require('./buttons.js')
 
 const button1 = new ButtonSelector("#gameCreateButton");
 const button2 = new ButtonSelector("#playerFormSubmitButton");
@@ -11,7 +11,7 @@ const button8 = new ButtonSelector('#backButtonRules')
 const button9 = new ButtonSelector('#artMenuButton')
 const button10 = new ButtonSelector('#joinButton')
 
-export {
+module.exports =  {
     button1, 
     button2, 
     button3, 

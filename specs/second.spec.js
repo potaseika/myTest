@@ -6,7 +6,6 @@ const EC = protractor.ExpectedConditions;
 browser.waitForAngularEnabled(false);
 
 describe("Second test in my life", function () {
-const button = new ButtonSelector()
   it("second test", async function () {
    await browser.get("https://test3-metafora-game.web.app");
     //await browser.get("http://localhost:3000");

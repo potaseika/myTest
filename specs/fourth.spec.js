@@ -3,7 +3,7 @@ const { element, by, browser } = require("protractor");
 const expect = require("chai").expect;
 const EC = protractor.ExpectedConditions;
 browser.waitForAngularEnabled(false);
-const buttonSelector = require ('../pages_object/buttons/buttons')
+const buttonSelector = require('../pages_object/buttons/buttons.js').default
 
 describe('Fourth test in my life', function(){
     

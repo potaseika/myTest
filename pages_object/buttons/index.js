@@ -1,4 +1,4 @@
-const {button} = require ("./selectors")
+const { button } = require ("./selectors")
 
 
 module.exports = {
