@@ -1,15 +1,25 @@
 const { ButtonSelector } = require('./buttons.js')
 
-const button1 = new ButtonSelector("#gameCreateButton");
-const button2 = new ButtonSelector("#playerFormSubmitButton");
-const button3 = new ButtonSelector("#gameSettingsSubmitButton");
-const button4 = new ButtonSelector("#menuButton");
-const button5 = new ButtonSelector("#exitGameButton");
-const button6 = new ButtonSelector("#acceptExitGameButton");
-const button7 = new ButtonSelector("#rulesButton")
-const button8 = new ButtonSelector('#backButtonRules')
-const button9 = new ButtonSelector('#artMenuButton')
-const button10 = new ButtonSelector('#joinButton')
+const button1 = new ButtonSelector({
+    selector: '#gameCreateButton'});
+const button2 = new ButtonSelector({
+    selector:'#playerFormSubmitButton'});
+const button3 = new ButtonSelector({
+    selector: '#gameSettingsSubmitButton'});
+const button4 = new ButtonSelector({
+    selector:'#menuButton'});
+const button5 = new ButtonSelector({
+    selector:'#exitGameButton'});
+const button6 = new ButtonSelector({
+    selector:'#acceptExitGameButton'});
+const button7 = new ButtonSelector({
+    selector:'#rulesButton'})
+const button8 = new ButtonSelector({
+    selector:'#backButtonRules'})
+const button9 = new ButtonSelector({
+    selector:'#artMenuButton'})
+const button10 = new ButtonSelector({
+    selector:'#joinButton'})
 
 module.exports =  {
     button1, 

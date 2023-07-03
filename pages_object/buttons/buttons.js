@@ -1,7 +1,6 @@
 class ButtonSelector {
-    constructor(button){
-        this.button = button.name
-        this.button.root = $("String")
+    constructor(selector){
+        this.button = document.querySelector(selector)
     }
     click()
 }
