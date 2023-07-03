@@ -1,4 +1,4 @@
-const { Button } = require('./buttons.js')
+const { ButtonSelector } = require('./buttons.js')
 
 const button1 = new ButtonSelector("#gameCreateButton");
 const button2 = new ButtonSelector("#playerFormSubmitButton");
